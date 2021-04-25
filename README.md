@@ -2,7 +2,7 @@
 Ejercicios del curso de Algoritmos de JavaScript y Estructuras de Datos
 
 ## Lista de Secciones:
-- [Sección 1: JavaScript básico]
+- [Sección 1: JavaScript básico](https://github.com/TaielNxz/FreeCodeCamp-JavaScript/tree/Sección_1)
 - [Sección 2: ES6]
 - [Sección 3: Depuración]
 - [Sección 4: Estructuras de datos básicas]
