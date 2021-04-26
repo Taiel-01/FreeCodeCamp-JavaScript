@@ -1719,8 +1719,10 @@ var myPlants = [
     }
 ];
 
+var secondTree = ""
 var secondTree = myPlants[1].list[1];
 console.log(secondTree)
+
 
 
 
@@ -1780,42 +1782,316 @@ updateRecords(collection, 5439, 'artist', 'ABBA');
 
 
 /* ==================================================================================================================================================
-*  Itera con el bucle "while" de JavaScript
-?   
-?  
+*   Itera con el bucle "while" de JavaScript
+?   Crea un array vacio con el nombre de 'myArray'
+?   Agrega los números de 5 a 0 (inclusivo) en orden descendente a 'myArray' usando un bucle 'while'. 
 ================================================================================================================================================== */
+var myArray = [];
+
+var i = 5;
+while(i >= 0){
+    myArray.push(i)
+    i--;
+}
+
+console.log(myArray);
 
 
 
 
+/* ==================================================================================================================================================
+*   Itera con los bucles "for" de JavaScript
+?   Crea un array vacio con el nombre de 'myArray'
+?   Usa un bucle for para empujar los valores desde el '1' al '5' en 'myArray'.
+================================================================================================================================================== */
+var myArray = []
+
+for (var i = 1; i <= 5; i++) {
+    myArray.push(i);
+}
+
+console.log(myArray)
 
 
 
+
+/* ==================================================================================================================================================
+*   Itera números impares con un bucle "for"
+?   Crea un array vacio con el nombre de 'myArray' 
+?   Inserta los números impares desde '1' hasta '9' en 'myArray' utilizando un bucle 'for'.
+================================================================================================================================================== */
+var myArray = []
+
+for (var i = 1; i <= 9; i += 2){
+    myArray.push(i)
+}
+
+console.log(myArray)
+
+
+
+
+/* ==================================================================================================================================================
+*   Cuenta hacia atrás con un bucle "for"
+?   Crea un array vacio con el nombre de 'myArray' 
+?   Inserta los números impares desde el 9 hasta el 1 en myArray utilizando un bucle for.
+================================================================================================================================================== */
+var myArray = []
+
+for (var i = 9; i >= 1; i -= 2){
+    myArray.push(i)
+}
+
+console.log(myArray)
+
+
+
+
+/* ==================================================================================================================================================
+*   Itera a través de un arreglo con un bucle "for"
+?   Declara e inicializa una variable 'total' a '0'. 
+?   Usa un bucle 'for' para sumar el valor de cada elemento del arreglo 'myArr' al 'total'.
+================================================================================================================================================== */
+var myArr = [ 2, 3, 4, 5, 6 ];
+
+// Cambia solo el código debajo de esta línea
+var total = 0;
+for (var i = 0; i < myArr.length; i++){
+    total += myArr[i]
+}
+
+console.log(total)
+
+
+
+
+/* ==================================================================================================================================================
+*   Anida bucles "for"
+?   Modifica la función 'multiplyAll' para que devuelva el producto de todos los números dentro de los sub-arreglos de 'arr'.
+?
+================================================================================================================================================== */
+function multiplyAll(arr) {
+    var product = 1;
+    // Cambia solo el código debajo de esta línea
+    for(var i = 0; i < arr.length; i++){
+        for(var j = 0; j < arr[i].length; j++){
+            product *= arr[i][j];
+        }
+    }     
+    // Cambia solo el código encima de esta línea
+    return product;
+}
+
+multiplyAll([[1,2],[3,4],[5,6,7]]);
+
+
+
+
+/* ==================================================================================================================================================
+*   Itera con el bucle "do...while" de JavaScript
+?   Cambia el bucle 'while' en el código por un bucle 'do...while'. El bucle solo enviará el número '10' a 'myArray', 
+?   e 'i' será igual a '11' cuando tu código haya terminado de ejecutarse.
+================================================================================================================================================== */
+var myArray = [];
+var i = 10;
+
+// Cambia solo el código debajo de esta línea
+do {
+    myArray.push(i);
+    i++;   
+} while (i < 5);
+
+
+console.log(myArray)
+
+
+
+
+/* ==================================================================================================================================================
+*   Reemplaza bucles usando recursión
+?   Escribe una función 'recursiva', sum(arr, n), que devuelve la suma de los primeros elementos 'n' de un arreglo 'arr'.
+?
+================================================================================================================================================== */
+function sum(arr, n) {
+    // Cambia solo el código debajo de esta línea
+    if (n <= 0){
+        return 0;
+      } else {
+        return sum(arr, n - 1) + arr[n - 1]
+      }
+    // Cambia solo el código encima de esta línea
+}
+
+
+console.log(sum([1], 0))
 
 
 
 
 
 /* ==================================================================================================================================================
-*   
-?   
-?  
+*   Búsqueda de perfiles
+?
+?
 ================================================================================================================================================== */
+var contacts = [
+    {
+        "firstName": "Akira",
+        "lastName": "Laine",
+        "number": "0543236543",
+        "likes": ["Pizza", "Coding", "Brownie Points"]
+    },
+    {
+        "firstName": "Harry",
+        "lastName": "Potter",
+        "number": "0994372684",
+        "likes": ["Hogwarts", "Magic", "Hagrid"]
+    },
+    {
+        "firstName": "Sherlock",
+        "lastName": "Holmes",
+        "number": "0487345643",
+        "likes": ["Intriguing Cases", "Violin"]
+    },
+    {
+        "firstName": "Kristian",
+        "lastName": "Vos",
+        "number": "unknown",
+        "likes": ["JavaScript", "Gaming", "Foxes"]
+    }
+];
+
+
+function lookUpProfile(name, prop){
+
+
+lookUpProfile("Akira", "likes");
+
+}
+
+/* ==================================================================================================================================================
+*   Genera fracciones aleatorias con JavaScript
+?   Cambia randomFraction para que devuelva un número aleatorio en lugar de devolver 0.
+?
+================================================================================================================================================== */
+function randomFraction() {
+    // Cambia solo el código debajo de esta línea
+
+    return Math.random();
+
+    // Cambia solo el código encima de esta línea
+}
 
 
 
 
+/* ==================================================================================================================================================
+*   Genera números enteros aleatorios con JavaScript
+?
+?
+================================================================================================================================================== */
+function randomWholeNum() {
+// Cambia solo el código debajo de esta línea
+
+    return Math.floor(Math.random() * 10);
+
+}
 
 
+
+
+/* ==================================================================================================================================================
+*   Genera números enteros aleatorios dentro de un rango
+?
+?
+================================================================================================================================================== */
+function randomRange(myMin, myMax) {
+    // Cambia solo el código debajo de esta línea
+    return Math.floor(Math.random() * (myMax - myMin + 1)) + myMin;
+    // Cambia solo el código encima de esta línea
+}
+
+
+
+
+/* ==================================================================================================================================================
+*   Utiliza la función "parseInt"
+?
+?
+================================================================================================================================================== */
+function convertToInteger(str) {
+    var a = parseInt(str);
+    return a
+}
+
+convertToInteger("56");
+
+
+
+
+/* ==================================================================================================================================================
+*   Utiliza la función "parseInt" con Radix (Base)
+?
+?
+================================================================================================================================================== */
+function convertToInteger(str) {
+
+    var a = parseInt(str, 2);
+    return a
+}
+
+convertToInteger("10011");
 
 
 
 
 
 /* ==================================================================================================================================================
-*   
-?   
-?  
+*   Usa el operador condicional (ternario)
+?   Utiliza el operador condicional en la función checkEqual para comprobar si dos números son iguales o no. 
+?   La función debe devolver la cadena Equal o la cadena Not Equal.
 ================================================================================================================================================== */
+function checkEqual(a, b) {
+    return a == b ? "Equal" : "Not Equal";
+}
+
+checkEqual(1, 2);
+
+
+
+
+/* ==================================================================================================================================================
+*   Usa múltiples operadores condicionales (ternarios)
+?   En la función checkSign, usa múltiples operadores condicionales (siguiendo el formato recomendado usado en findGreaterOrEqual) 
+?   para comprobar si un número es positivo, negativo o cero.
+?   La función debe devolver positive, negative o zero.
+================================================================================================================================================== */
+function checkSign(num) {
+    return (num > 0) ? "positive" 
+    : (num < 0) ? "negative" 
+    : "zero";
+}
+
+checkSign(10);
+
+
+
+
+/* ==================================================================================================================================================
+*   Usa recursión para crear un rango de números
+?   Hemos definido una función llamada 'rangeOfNumbers' con dos parámetros. 
+?   La función debe devolver un arreglo de enteros que comienza con el número representado por el parámetro 'startNum' y termina con el número...
+?   representado por el parámetro 'endNum'. 
+?   El número inicial será siempre menor o igual que el número final. Tu función debe utilizar recursión, llamándose a sí misma, 
+?   y no utilizar bucles de ningún tipo. También debe funcionar en el caso que startNum y endNum sean iguales.
+================================================================================================================================================== */
+function rangeOfNumbers(startNum, endNum) {
+    return startNum === endNum ? [startNum]
+    : rangeOfNumbers(startNum, endNum - 1).concat(endNum);
+};
+  
+
+
+
 
 

@@ -1676,6 +1676,30 @@ var myMusic = [
 ?   Accede al objeto 'myStorage' y asigna el contenido de la propiedad 'glove box' a la variable 'gloveBoxContents'.
 ?   Utiliza la notación de puntos para todas las propiedades cuando sea posible, de lo contrario utiliza la notación de corchetes.
 ================================================================================================================================================== */
+var myStorage = {
+    "car": {
+        "inside": {
+        "glove box": "maps",
+        "passenger seat": "crumbs"
+        },
+        "outside": {
+        "trunk": "jack"
+        }
+    }
+};
+
+
+
+
+console.log(gloveBoxContents)
+
+
+
+
+/* ==================================================================================================================================================
+*   Accede a arreglos anidados
+?   Utilizando la notación de puntos y corchetes, establezca la variable 'secondTree' en el segundo elemento de la lista 'trees' del objeto 'myPlants'.
+================================================================================================================================================== */
 var myPlants = [
     {
         type: "flowers",
@@ -1695,8 +1719,49 @@ var myPlants = [
     }
 ];
 
-var secondTree = ""
-console.log(secondTree)
+
+
+
+
+
+
+
+/* ==================================================================================================================================================
+*   Colección de discos
+?   'https://www.freecodecamp.org/espanol/learn/javascript-algorithms-and-data-structures/basic-javascript/record-collection'  
+================================================================================================================================================== */
+// Configuración
+var collection = {
+    2548: {
+        albumTitle: 'Slippery When Wet',
+        artist: 'Bon Jovi',
+        tracks: ['Let It Rock', 'You Give Love a Bad Name']
+    },
+    2468: {
+        albumTitle: '1999',
+        artist: 'Prince',
+        tracks: ['1999', 'Little Red Corvette']
+    },
+    1245: {
+        artist: 'Robert Palmer',
+        tracks: []
+    },
+    5439: {
+        albumTitle: 'ABBA Gold'
+    }
+};
+
+// Cambia solo el código debajo de esta línea
+
+
+
+
+
+
+
+
+
+
 
 
 
